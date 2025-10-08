@@ -1,0 +1,31 @@
+span{
+    display: block;
+}
+#baner{
+    width: 800px;
+    height: 300px;
+    position:relative;
+}
+#baner h1{
+    position:absolute;
+}
+
+img{
+    float:left;
+    margin: 0 0 0 15px;
+}
+
+button{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.columna{
+    float:left;
+    width:33.3%;
+}
+
+footer{
+    height: 20px;
+}

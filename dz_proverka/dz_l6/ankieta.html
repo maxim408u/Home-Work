@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ankieta: Ulubione systemy operacyjne</h1>
+
+    <form>
+        <fieldset>
+            <legend>Dane respondenta</legend>
+
+            <label for="wiek">Wiek:</label>
+            <input type="number" id="wiek" name="wiek"><br><br>
+
+            <span>Płeć:</span><br>
+            <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">
+            <label for="mezczyzna">Mężczyzna</label><br>
+
+            <input type="radio" id="kobieta" name="plec" value="kobieta">
+            <label for="kobieta">Kobieta</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencje</legend>
+
+            <p>Z jakich systemów operacyjnych korzystasz?</p>
+            <input type="checkbox" id="windows" name="systemy" value="Windows">
+            <label for="windows">Windows</label><br>
+
+            <input type="checkbox" id="macos" name="systemy" value="macOS">
+            <label for="macos">macOS</label><br>
+
+            <input type="checkbox" id="linux" name="systemy" value="Linux">
+            <label for="linux">Linux</label><br><br>
+
+            <p>Który system ocenia najwyżej?</p>
+            <input type="radio" id="win-best" name="najlepszy" value="Windows">
+            <label for="win-best">Windows</label><br>
+
+            <input type="radio" id="mac-best" name="najlepszy" value="macOS">
+            <label for="mac-best">macOS</label><br>
+
+            <input type="radio" id="lin-best" name="najlepszy" value="Linux">
+            <label for="lin-best">Linux</label><br>
+        </fieldset>
+        
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+    </form>
+</body>
+</html>

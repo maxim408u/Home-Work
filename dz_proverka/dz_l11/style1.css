@@ -1,0 +1,43 @@
+h1{
+    border:3px dotted red;
+}
+
+#ll{
+    width: 400px;
+    background-color: lightyellow;
+    padding: 25px;
+}
+
+.kwadrat{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#a1{
+    background-color:green;
+}
+#a2{
+    background-color:purple;
+}
+#a3{
+    background-color:cyan;
+}
+
+
+#kontener{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid grey;
+    padding:10px 20px 30px 40px;
+}
+
+.product{
+    width: 250px;
+    box-shadow: 2px 2px 5px grey;
+    margin:20px;
+    padding:15px;
+    border-radius:5px;
+}
