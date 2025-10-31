@@ -1,0 +1,125 @@
+CZESC 1
+
+1
+SELECT *
+FROM Pracownicy
+
+2
+SELECT imie AS 'Imie_pracownika', nazwisko AS 'Nazwisko_Pracownika', stanowisko AS 'Zajmowane_Stanowisko'
+FROM Pracownicy
+
+3
+SELECT DISTINCT stanowisko
+FROM Pracownicy
+
+4
+SELECT id_projektu AS 'ID', nazwa_projektu AS 'Nazwa', data_rozpoczecia AS 'Start', data_zakonczenia AS 'Koniec', budzet AS 'Budzet_PLN' 
+FROM Projekty
+
+CZESC 2
+
+5
+SELECT imie, nazwisko
+FROM Pracownicy
+WHERE pensja >= 10000;
+
+6
+SELECT imie, nazwisko, data_zatrudnienia 
+FROM Pracownicy
+WHERE data_zatrudnienia LIKE '2022%';
+
+7
+SELECT imie, nazwisko, stanowisko
+FROM Pracownicy
+WHERE NOT stanowisko = 'Programista PHP';
+
+8
+SELECT imie, nazwisko, stanowisko
+FROM Pracownicy
+WHERE stanowisko = 'Project Manager' AND pensja > 12000;
+
+9
+SELECT nazwa_projektu, budzet
+FROM Projekty
+WHERE budzet < 100000 OR data_rozpoczecia LIKE '2023%';
+
+CZESC 3
+
+10
+SELECT imie, nazwisko, stanowisko
+FROM Pracownicy
+WHERE stanowisko IN ('Project Manager', 'Analityk dabych', 'DevOps Engineer');
+
+11
+SELECT imie, nazwisko
+FROM Pracownicy
+WHERE pensja BETWEEN 7000 AND 9000 
+
+12
+SELECT imie, nazwisko
+FROM Pracownicy 
+WHERE nazwisko LIKE '%ski' OR nazwisko LIKE '%ska';
+
+13
+SELECT imie, nazwisko
+FROM Pracownicy 
+WHERE email IS NULL;
+
+14
+SELECT nazwa_projektu
+FROM Projekty
+WHERE data_zakonczenia IS NULL;
+
+15
+SELECT imie, nazwisko, email
+FROM Pracownicy
+WHERE email LIKE '%example.com';
+
+16
+SELECT imie, nazwisko
+FROM Pracownicy
+WHERE NOT id_projekt IN (1, 2, 3);
+
+17
+SELECT id_projektu
+FROM Projekty
+WHERE id_projeku LIKE '%system%';
+
+18
+SELECT imie, nazwisko
+FROM Pracownicy
+WHERE imie IN ('Anna', 'Zofia') AND data_zatrudnienia < 2021-01-01;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

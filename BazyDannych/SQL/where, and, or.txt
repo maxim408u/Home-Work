@@ -1,0 +1,24 @@
+1
+SELECT nazwa_produktu, cena 
+FROM pprodukty 
+WHERE cena > 500;
+
+2
+SELECT * 
+FROM pprodukty 
+WHERE id_produkt = 3;
+
+3
+SELECT nazwa_produktu
+FROM pprodukty
+WHERE producent_id = 1 and cena < 2000;
+
+4
+SELECT nazwa_firmy, kraj
+FROM producenci
+WHERE kraj = 'Chiny' OR kraj = 'USA';
+
+5
+SELECT * 
+from producenci
+WHERE NOT id_producenta = 2;
