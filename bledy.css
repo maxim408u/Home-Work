@@ -1,5 +1,0 @@
-h1 {
-    color: red; /* BŁĄD 2 */
-    display: flex  ;
-    justify-content: center /* BŁĄD 3 */
-} /* BŁĄD 4 */
